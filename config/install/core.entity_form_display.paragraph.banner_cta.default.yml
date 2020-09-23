@@ -1,0 +1,41 @@
+uuid: 53d3e4da-8193-4491-a112-c6d0eff97898
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.banner_cta.banner
+    - paragraphs.paragraphs_type.banner_cta
+  module:
+    - field_layout
+    - inline_entity_form
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.banner_cta.default
+targetEntityType: paragraph
+bundle: banner_cta
+mode: default
+content:
+  banner:
+    weight: 0
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: 'Add a Banner block (recipes/articles)'
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      revision: false
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+hidden:
+  created: true
+  status: true

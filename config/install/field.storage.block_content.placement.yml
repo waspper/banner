@@ -1,0 +1,64 @@
+uuid: 90f8a61a-77ab-4599-977b-da0c025d8687
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - field_permissions
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: block_content.placement
+field_name: placement
+entity_type: block_content
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: recipe
+      label: 'Landing recipe'
+    -
+      value: article
+      label: 'Landing article'
+    -
+      value: home
+      label: 'Home page'
+    -
+      value: coupon
+      label: Coupon
+    -
+      value: product
+      label: 'Landing Product'
+    -
+      value: offer
+      label: 'Landing offer'
+    -
+      value: game
+      label: 'Landing game'
+    -
+      value: game-detail
+      label: 'Game detail'
+    -
+      value: recipe-detail
+      label: 'Recipe detail'
+    -
+      value: cashback
+      label: Cashback
+    -
+      value: cart
+      label: Cart
+    -
+      value: product_detail
+      label: 'Product detail'
+    -
+      value: home_2
+      label: 'Home 2'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,17 @@
+uuid: bcd1ea67-03b2-4bff-9828-e52a97cb8a23
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_viewmode
+id: banner_cta
+label: 'Banner CTA'
+icon_uuid: null
+icon_default: null
+description: 'Paragraph to insert a custom block "banner"'
+behavior_plugins:
+  paragraphs_viewmode_behavior:
+    override_mode: default
+    override_available:
+      default: Default
+    override_default: default

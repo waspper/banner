@@ -1,0 +1,23 @@
+uuid: 21cec702-988a-42b3-a8e0-23a3967fdc08
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner
+    - field.storage.block_content.button
+  module:
+    - link
+id: block_content.banner.button
+field_name: button
+entity_type: block_content
+bundle: banner
+label: Button
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

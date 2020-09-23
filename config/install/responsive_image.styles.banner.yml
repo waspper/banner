@@ -1,0 +1,18 @@
+uuid: 9762553c-e174-4707-a62a-43bbad08b925
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.1500_700
+  theme:
+    - clv
+id: banner
+label: Banner
+image_style_mappings:
+  -
+    breakpoint_id: clv.m
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: '1500_700'
+breakpoint_group: clv
+fallback_image_style: '1500_700'

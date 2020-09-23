@@ -1,0 +1,14 @@
+uuid: a5e371f1-1a67-4239-b533-4ed8fcdf6c94
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - node
+third_party_settings:
+  lightning_core:
+    description: ''
+id: node.banner
+label: Banner
+targetEntityType: node
+cache: true

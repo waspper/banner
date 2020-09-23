@@ -1,0 +1,43 @@
+uuid: 1c78a938-f9b6-41e5-b337-24f83db9aebd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.banner.blurred_image
+    - field.field.paragraph.banner.image
+    - field.field.paragraph.banner.link
+    - paragraphs.paragraphs_type.banner
+  module:
+    - field_layout
+    - layout_discovery
+    - link
+    - media_library
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.banner.default
+targetEntityType: paragraph
+bundle: banner
+mode: default
+content:
+  image:
+    weight: 0
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+  link:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  blurred_image: true
+  created: true
+  status: true

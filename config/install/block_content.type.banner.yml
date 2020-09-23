@@ -1,0 +1,8 @@
+uuid: d814536b-dfce-4958-903b-0c7358177b44
+langcode: en
+status: true
+dependencies: {  }
+id: banner
+label: Banner
+revision: 0
+description: 'This block allow admin to display a banner'

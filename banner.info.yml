@@ -1,0 +1,38 @@
+name: 'Banner'
+description: 'Allows to create Banner paragraphs and blocks'
+type: module
+package: nes-brands-core
+core_version_requirement: ^8.8 || ^9
+dependencies:
+  - allowed_formats:allowed_formats
+  - ctools:ctools
+  - drupal:content_translation
+  - drupal:block_content
+  - drupal:field
+  - drupal:field_layout
+  - drupal:image
+  - drupal:language
+  - drupal:layout_builder
+  - drupal:layout_discovery
+  - drupal:link
+  - drupal:media
+  - drupal:media_library
+  - drupal:node
+  - drupal:options
+  - drupal:responsive_image
+  - drupal:system
+  - drupal:text
+  - drupal:user
+  - drupal:views
+  - entity_reference_revisions:entity_reference_revisions
+  - field_permissions:field_permissions
+  - focal_point:focal_point
+  - inline_entity_form:inline_entity_form
+  - layouts:layouts
+  - layout_builder_restrictions:layout_builder_restrictions
+  - lightning_core:lightning_core  
+  - page_manager:page_manager
+  - panels:panels
+  - paragraphs:paragraphs
+  - paragraphs_viewmode:paragraphs_viewmode
+  - main_highlight:main_highlight

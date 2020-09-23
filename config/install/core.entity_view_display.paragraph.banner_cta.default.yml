@@ -1,0 +1,23 @@
+uuid: 031f5fdf-133d-42cf-8697-0fb950d1cadb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.banner_cta.banner
+    - paragraphs.paragraphs_type.banner_cta
+id: paragraph.banner_cta.default
+targetEntityType: paragraph
+bundle: banner_cta
+mode: default
+content:
+  banner:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  search_api_excerpt: true

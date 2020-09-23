@@ -1,0 +1,14 @@
+uuid: 559b8607-2d97-45cf-a6c2-916d1bc08361
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - media
+third_party_settings:
+  lightning_core:
+    description: ''
+id: media.banner
+label: Banner
+targetEntityType: media
+cache: true

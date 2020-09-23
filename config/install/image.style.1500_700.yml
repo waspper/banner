@@ -1,0 +1,15 @@
+uuid: 29f06cc7-37a0-422d-9ee3-40f4c01e6aa9
+langcode: en
+status: true
+dependencies: {  }
+name: '1500_700'
+label: 'Scale and crop 1500x700'
+effects:
+  b8e01747-7db5-4c92-887b-c76305297187:
+    uuid: b8e01747-7db5-4c92-887b-c76305297187
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1500
+      height: 700
+      anchor: center-center

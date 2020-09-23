@@ -1,0 +1,24 @@
+uuid: df6a8335-5fd4-4b83-89f5-6ee3587b1645
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.scale_and_crop_570x490
+    - image.style.scale_and_crop_860x740
+  theme:
+    - clv
+id: banner_small
+label: 'Banner small'
+image_style_mappings:
+  -
+    breakpoint_id: clv.l
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: scale_and_crop_570x490
+  -
+    breakpoint_id: clv.s
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: scale_and_crop_860x740
+breakpoint_group: clv
+fallback_image_style: scale_and_crop_570x490

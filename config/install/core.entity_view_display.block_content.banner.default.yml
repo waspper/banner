@@ -1,0 +1,194 @@
+uuid: f5877b1b-b60e-4c3d-8f7d-dadd52da6ca6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner
+    - field.field.block_content.banner.body
+    - field.field.block_content.banner.button
+    - field.field.block_content.banner.image
+    - field.field.block_content.banner.placement
+    - field.field.block_content.banner.title
+  module:
+    - clv_layouts
+    - layout_builder
+    - layout_builder_restrictions
+    - link
+    - options
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: clv_banner
+        layout_settings:
+          label: ''
+        components:
+          edb496e4-4e00-427f-891f-04b7df774385:
+            uuid: edb496e4-4e00-427f-891f-04b7df774385
+            region: image
+            configuration:
+              id: 'field_block:block_content:banner:image'
+              label: Image
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: banner
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          86c74f2b-addc-4ceb-90e3-6128f9259c4c:
+            uuid: 86c74f2b-addc-4ceb-90e3-6128f9259c4c
+            region: middle_left_content
+            configuration:
+              id: 'field_block:block_content:banner:title'
+              label: Title
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: title
+                settings:
+                  tag: h2
+                  linked: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: -10
+          4e8322c8-c479-496d-9384-4691fbf0c045:
+            uuid: 4e8322c8-c479-496d-9384-4691fbf0c045
+            region: middle_left_content
+            configuration:
+              id: 'field_block:block_content:banner:body'
+              label: Body
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: -9
+          964c99c8-7692-4e3b-8d21-c44f0a52a887:
+            uuid: 964c99c8-7692-4e3b-8d21-c44f0a52a887
+            region: middle_left_content
+            configuration:
+              id: 'field_block:block_content:banner:button'
+              label: Button
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: link
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: '0'
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+  layout_builder_restrictions:
+    entity_view_mode_restriction:
+      allowed_blocks:
+        AddToAny: {  }
+        'Bazaarvoice Products': {  }
+        'Bazaarvoice Reviews': {  }
+        'Business Rules': {  }
+        'CLV Coupons - Search': {  }
+        'CLV Coupons - Universes': {  }
+        'Chaos Tools': {  }
+        Commerce: {  }
+        'Custom block': {  }
+        'Custom block types': {  }
+        'Custom blocks': {  }
+        Facets: {  }
+        'Facets Block': {  }
+        Forms: {  }
+        Games: {  }
+        Gigya: {  }
+        Help: {  }
+        'Inline blocks': {  }
+        'Lists (Views)': {  }
+        Menus: {  }
+        Offer: {  }
+        'Recipes block ': {  }
+        'Recommended Recipes': {  }
+        Search: {  }
+        System: {  }
+        Universes: {  }
+        User: {  }
+        'User fields': {  }
+        Views: {  }
+        Webform: {  }
+        core: {  }
+      allowed_layouts: {  }
+id: block_content.banner.default
+targetEntityType: block_content
+bundle: banner
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  button:
+    weight: 3
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  image:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  placement:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  title:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

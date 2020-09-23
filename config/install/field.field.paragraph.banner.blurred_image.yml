@@ -1,0 +1,23 @@
+uuid: c2139ba9-5cbc-42e4-acc7-56cceb6d7a97
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.blurred_image
+    - paragraphs.paragraphs_type.banner
+id: paragraph.banner.blurred_image
+field_name: blurred_image
+entity_type: paragraph
+bundle: banner
+label: 'Blurred image'
+description: 'Is the image need to be blurred ?'
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

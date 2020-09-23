@@ -1,0 +1,28 @@
+uuid: 670dda3a-019a-4d59-b640-d8bfa1dabca3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner
+    - field.storage.paragraph.banner
+    - paragraphs.paragraphs_type.banner_cta
+id: paragraph.banner_cta.banner
+field_name: banner
+entity_type: paragraph
+bundle: banner_cta
+label: 'Banner CTA'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      banner: banner
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

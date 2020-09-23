@@ -1,0 +1,31 @@
+uuid: 03152dbc-2000-4703-abfe-4b572067009b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner
+    - field.storage.block_content.body
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: '0'
+    restricted_html: '0'
+    script: '0'
+    full_html: '0'
+    plain_text: '0'
+id: block_content.banner.body
+field_name: body
+entity_type: block_content
+bundle: banner
+label: Body
+description: 'Main text of banner'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

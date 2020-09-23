@@ -1,0 +1,15 @@
+uuid: 02e2cbb9-6487-4806-9dda-516866f82d43
+langcode: en
+status: true
+dependencies: {  }
+name: scale_and_crop_860x740
+label: 'Scale and crop (860x740)'
+effects:
+  335430ac-cf86-449d-bc3a-1a21a848badf:
+    uuid: 335430ac-cf86-449d-bc3a-1a21a848badf
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 860
+      height: 740
+      anchor: center-center

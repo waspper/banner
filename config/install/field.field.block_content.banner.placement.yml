@@ -1,0 +1,21 @@
+uuid: 70a64bf8-6583-4430-b52c-02b4920437b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner
+    - field.storage.block_content.placement
+  module:
+    - options
+id: block_content.banner.placement
+field_name: placement
+entity_type: block_content
+bundle: banner
+label: Placement
+description: 'Choose a placement for this block'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
